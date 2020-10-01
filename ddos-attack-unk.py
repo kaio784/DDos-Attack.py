@@ -1,7 +1,5 @@
 import socket
 import sys
-import osimport socket
-import sys
 import os
 
 main = """
