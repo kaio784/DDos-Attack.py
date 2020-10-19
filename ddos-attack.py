@@ -10,7 +10,8 @@ print("""
        * 
 **         
            
-  *        
+  *       
+    versão: V1.0 
   youtube channel: ch33ch
 Powered by: koda/ch33ch/destruction/zero x ...\n\n""")
 
